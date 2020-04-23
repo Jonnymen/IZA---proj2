@@ -10,9 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var VStack: UIStackView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let ws = WebScraper()
+        let ParkHouseList = ws.getParkHouses()
+        
+        print(ParkHouseList)
+        
+        
     }
 
 

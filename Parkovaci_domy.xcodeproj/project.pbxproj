@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,10 @@
 		FB3117712450EA0700CBD234 /* Parkovaci_domy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB31176F2450EA0700CBD234 /* Parkovaci_domy.xcdatamodeld */; };
 		FB3117732450EA0900CBD234 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB3117722450EA0900CBD234 /* Assets.xcassets */; };
 		FB3117762450EA0900CBD234 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3117742450EA0900CBD234 /* LaunchScreen.storyboard */; };
+		FB3117812450F63200CBD234 /* ParkHouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3117802450F63200CBD234 /* ParkHouseView.swift */; };
+		FB3117842450F94F00CBD234 /* ParkHouseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3117832450F94F00CBD234 /* ParkHouseModel.swift */; };
+		FB3117872450FBCC00CBD234 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = FB3117862450FBCC00CBD234 /* SwiftSoup */; };
+		FB31178A2450FC1B00CBD234 /* WebScraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3117892450FC1B00CBD234 /* WebScraper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,9 @@
 		FB3117722450EA0900CBD234 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB3117752450EA0900CBD234 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB3117772450EA0900CBD234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB3117802450F63200CBD234 /* ParkHouseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkHouseView.swift; sourceTree = "<group>"; };
+		FB3117832450F94F00CBD234 /* ParkHouseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkHouseModel.swift; sourceTree = "<group>"; };
+		FB3117892450FC1B00CBD234 /* WebScraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebScraper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB3117872450FBCC00CBD234 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +66,9 @@
 		FB3117652450EA0700CBD234 /* Parkovaci_domy */ = {
 			isa = PBXGroup;
 			children = (
+				FB3117882450FBF300CBD234 /* Services */,
+				FB3117822450F92900CBD234 /* Models */,
+				FB31177D2450F5C300CBD234 /* Views */,
 				FB3117662450EA0700CBD234 /* AppDelegate.swift */,
 				FB3117682450EA0700CBD234 /* SceneDelegate.swift */,
 				FB31176A2450EA0700CBD234 /* ViewController.swift */,
@@ -68,6 +79,30 @@
 				FB31176F2450EA0700CBD234 /* Parkovaci_domy.xcdatamodeld */,
 			);
 			path = Parkovaci_domy;
+			sourceTree = "<group>";
+		};
+		FB31177D2450F5C300CBD234 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB3117802450F63200CBD234 /* ParkHouseView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FB3117822450F92900CBD234 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB3117832450F94F00CBD234 /* ParkHouseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FB3117882450FBF300CBD234 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FB3117892450FC1B00CBD234 /* WebScraper.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +121,9 @@
 			dependencies = (
 			);
 			name = Parkovaci_domy;
+			packageProductDependencies = (
+				FB3117862450FBCC00CBD234 /* SwiftSoup */,
+			);
 			productName = Parkovaci_domy;
 			productReference = FB3117632450EA0700CBD234 /* Parkovaci_domy.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +152,9 @@
 				Base,
 			);
 			mainGroup = FB31175A2450EA0700CBD234;
+			packageReferences = (
+				FB3117852450FBCC00CBD234 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = FB3117642450EA0700CBD234 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,7 +182,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB3117842450F94F00CBD234 /* ParkHouseModel.swift in Sources */,
+				FB3117812450F63200CBD234 /* ParkHouseView.swift in Sources */,
 				FB31176B2450EA0700CBD234 /* ViewController.swift in Sources */,
+				FB31178A2450FC1B00CBD234 /* WebScraper.swift in Sources */,
 				FB3117672450EA0700CBD234 /* AppDelegate.swift in Sources */,
 				FB3117692450EA0700CBD234 /* SceneDelegate.swift in Sources */,
 				FB3117712450EA0700CBD234 /* Parkovaci_domy.xcdatamodeld in Sources */,
@@ -291,6 +335,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BG84NHF336;
 				INFOPLIST_FILE = Parkovaci_domy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +354,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BG84NHF336;
 				INFOPLIST_FILE = Parkovaci_domy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,6 +388,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB3117852450FBCC00CBD234 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB3117862450FBCC00CBD234 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB3117852450FBCC00CBD234 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		FB31176F2450EA0700CBD234 /* Parkovaci_domy.xcdatamodeld */ = {
